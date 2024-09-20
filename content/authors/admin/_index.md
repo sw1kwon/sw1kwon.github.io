@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: 권순원
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Kwon Soon Won
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Soonwon
+last_name: Kwon
 
 # Status emoji
 status:
