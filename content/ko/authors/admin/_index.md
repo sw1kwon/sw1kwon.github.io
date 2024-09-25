@@ -46,10 +46,10 @@ profiles:
   # - icon: academicons/orcid
   #   url: https://orcid.org/
 
-interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+관심분야:
+  - 통계 데이터 분석 및 시각화
+  - 스포츠 빅데이터
+  - 디지털 미디어 분석
 
 education:
   - area: PhD Artificial Intelligence
