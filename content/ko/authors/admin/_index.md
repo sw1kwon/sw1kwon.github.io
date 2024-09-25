@@ -46,7 +46,7 @@ profiles:
   # - icon: academicons/orcid
   #   url: https://orcid.org/
 
-관심분야:
+interests:
   - 통계 데이터 분석 및 시각화
   - 스포츠 빅데이터
   - 디지털 미디어 분석
