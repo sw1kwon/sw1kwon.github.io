@@ -90,7 +90,7 @@ education:
     summary: |
       GPA: 3.4/4.0
   - area: March 2018 - Present
-    institution: Expected Graduation: February 2026
+    institution: Expected Graduation (February 2026)
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
