@@ -72,8 +72,8 @@ education:
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: 학사과정
-    institution: 전북대학교 통계학과
+  - area: 통계학과 학사과정
+    institution: 전북대학교
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
@@ -84,9 +84,9 @@ education:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
   
-  #  - area: 2018년 3월 ~ 현재 (재학 중)
+   - area: 2018년 3월 ~ 현재 (재학 중)
 
-  #  - area: 2026년 2월 졸업 예정
+   - area: 2026년 2월 졸업 예정
 
 
 work:
