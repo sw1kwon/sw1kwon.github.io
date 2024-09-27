@@ -85,7 +85,7 @@ education:
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
    - area: 2018년 3월 ~ 현재 (재학 중)
 
-   - area: 예정 졸업일: 2026년 2월
+   - area: 2026년 2월 졸업 예정
 
 
 work:
