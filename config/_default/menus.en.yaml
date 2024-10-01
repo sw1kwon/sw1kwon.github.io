@@ -9,31 +9,31 @@ main:
     weight: 100
 
   - name: Skills
-    url: /#papers
+    url: project/
     weight: 200
 
   - name: Projects
-    url: /#talks
+    url: /
     weight: 300
   - parent: Projects
     name: Personal
-    url: /#talks
+    url: publication/
     weight: 310
   - parent: Projects
     name: Team
-    url: /#talks
+    url: publication/
     weight: 320
 
   - name: Activities
-    url: /#news
+    url: /
     weight: 400
   - parent: Activities
     name: Academic Courses
-    url: /#experience/
+    url: teaching/
     weight: 410
   - parent: Activities
     name: Extracurricular
-    url: /#experience/
+    url: event/
     weight: 420
 
   - name: Contact
