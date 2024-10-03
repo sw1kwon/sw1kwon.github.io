@@ -1,41 +1,44 @@
 ---
 title: Contact
-date: 2024-10-04
+date: 2022-10-24
 
 type: landing
 
 sections:
   - block: contact
     content:
-      title: Contact Us
-      text: |-
-        If you have any inquiries, please feel free to contact us using the form below or reach out through the provided contact details.
-      email: info@example.com
-      phone: +1 234 567 8900
+      title: Contact
+      text: 전북대학교 자연과학대학 통계학과
+      email: ksw628(at)jbnu.ac.kr
+      phone: +82-63-270-3380
       address:
-        street: 123 Example Street
-        city: New York
-        region: NY
-        postcode: '10001'
-        country: United States
-        country_code: US
+        street: 백제대로 567 전북대학교 자연과학대학 본관
+        city: 전주시
+        region: 전북특별자치도
+        postcode: '54896'
+        country: 대한민국
+        country_code: KO
       coordinates:
-        latitude: '40.712776'
-        longitude: '-74.005974'
-      directions: |-
-        We are located in downtown New York, easily accessible by subway and bus.
+        latitude: '35.847394'
+        longitude: '127.130720'
+      directions: 
+      #contact_links:
+      #  - icon: comments
+      #    icon_pack: fas
+      #    name: Discuss on Forum
+      #    link: 'https://discourse.gohugo.io'
     
       # Automatically link email and phone or display as text?
       autolink: true
     
-      # Email form provider
-      form:
-        provider: netlify
-        netlify:
-          success_url: /thanks/ # 폼 제출 성공 후 리다이렉트할 페이지
-          captcha: true          # CAPTCHA 사용 여부 설정
-        attachments: true         # 파일 첨부 활성화 여부
-
+      # # Email form provider
+      # form:
+      #   provider: netlify
+      #   formspree:
+      #     id:
+      #   netlify:
+      #     # Enable CAPTCHA challenge to reduce spam?
+      #     captcha: true
     design:
-      columns: '2'
+      columns: '3'
 ---
