@@ -17,7 +17,7 @@
 {{ $use_netlify_captcha := $block.content.form.netlify.captcha | default true }}
 {{ $use_formspree_captcha := $block.content.form.formspree.captcha | default false }}
 
-{{ $columns := $block.design.columns | default "3" }}
+{{ $columns := $block.design.columns | default "2" }}
 
 {{ if and $use_formspree_form $use_formspree_captcha }}
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -55,6 +55,12 @@
           <label class="sr-only" for="inputMessage">{{ i18n "contact_message" }}</label>
           <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="{{ i18n "contact_message" | default "Message" }}" required></textarea>
         </div>
+        {{ if $block.content.form.netlify.attachments }}
+          <div class="form-group form-inline">
+            <label class="sr-only" for="fileUpload">{{ i18n "contact_attachment" }}</label>
+            <input type="file" name="file" class="form-control w-100" id="fileUpload" placeholder="{{ i18n "contact_attachment" | default "Attach file" }}">
+          </div>
+        {{ end }}
         <div class="d-none">
           <label>Do not fill this field unless you are a bot: <input name="_gotcha"></label>
         </div>
@@ -89,9 +95,9 @@
     </li>
     {{ end }}
 
-    {{ $addr_formatted := "" }}
+    {{ $addr_formatted := "" }}{{/* Scoping for maps. */}}
     {{ if $data.address.street | or $data.address.city | or $data.address.region | or $data.address.postcode | or $data.address.country }}
-      {{ $addr_formatted = printf "%s, %s, %s, %s" $data.address.street $data.address.city $data.address.region $data.address.postcode }}
+      {{ $addr_formatted = partial "functions/get_address" (dict "root" . "address" $data.address) }}
       <li>
         <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
         <span id="person-address">{{$addr_formatted}}</span>
@@ -102,6 +108,47 @@
     <li>
       <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
       <span>{{ . | markdownify | emojify }}</span>
+    </li>
+    {{ end }}
+
+    {{ with $data.office_hours }}
+    <li>
+      <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+      <span>
+        {{- if not (reflect.IsSlice .)}}{{/* Support legacy string format. */}}
+          {{- . | markdownify | emojify -}}
+        {{else}}
+          {{- delimit . "<br>" | markdownify | emojify -}}
+        {{end -}}
+      </span>
+    </li>
+    {{ end }}
+
+    {{ with $data.appointment_url }}
+    <li>
+      <i class="fa-li fas fa-calendar-check fa-2x" aria-hidden="true"></i>
+      <a href="{{ . }}" target="_blank" rel="noopener">{{ i18n "book_appointment" | default "Book an appointment" }}</a>
+    </li>
+    {{ end }}
+
+    {{/* Contact links. */}}
+    {{ range $data.contact_links }}
+    {{ $pack := or .icon_pack "fas" }}
+    {{ $pack_prefix := $pack }}
+    {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+      {{ $pack_prefix = "fa" }}
+    {{ end }}
+    {{ $link := .link }}
+    {{ $scheme := (urls.Parse $link).Scheme }}
+    {{ $target := "" }}
+    {{ if not $scheme }}
+      {{ $link = .link | relLangURL }}
+    {{ else if in (slice "http" "https") $scheme }}
+      {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+    {{ end }}
+    <li>
+      <i class="fa-li {{ $pack }} {{ $pack_prefix }}-{{ .icon }} fa-2x" aria-hidden="true"></i>
+      <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>{{.name|markdownify|emojify|safeHTML}}</a>
     </li>
     {{ end }}
 
