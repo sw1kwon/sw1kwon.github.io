@@ -6,7 +6,7 @@
 # Website name
 title: SoonwonKWON
 # Website URL
-baseURL: 'https://soonwonkwon-data.github.io/'
+baseURL: 'https://soonwonkwon.netlify.app'
 
 ############################
 ## LANGUAGE
