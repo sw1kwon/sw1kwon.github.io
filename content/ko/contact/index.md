@@ -6,11 +6,6 @@ type: landing
 
 sections:
   - block: contact
-    features:
-      map:
-        provider: 'mapbox'
-        api_key: ''
-        zoom: 15
     content:
       title: Contact
       text: |-
