@@ -8,7 +8,7 @@ sections:
   - block: contact
     features:
       map:
-        provider: 'mapnik'
+        provider: 'mapbox'
         api_key: ''
         zoom: 15
     content:
