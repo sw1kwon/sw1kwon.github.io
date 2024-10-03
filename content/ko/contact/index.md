@@ -6,6 +6,11 @@ type: landing
 
 sections:
   - block: contact
+    features:
+      map:
+        provider: 'mapnik'
+        api_key: ''
+        zoom: 15
     content:
       title: Contact
       text: |-
