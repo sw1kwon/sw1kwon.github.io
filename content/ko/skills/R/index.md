@@ -1,13 +1,13 @@
 ---
 title: R
-date: 2023-10-26
-external_link: https://github.com/pandas-dev/pandas
-tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+# date: 2023-10-26
+external_link: https://www.r-project.org/
+# tags:
+#   - Hugo
+#   - Wowchemy
+#   - Markdown
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+R은 통계 분석과 데이터 시각화를 위한 강력한 언어입니다.
 
 <!--more-->

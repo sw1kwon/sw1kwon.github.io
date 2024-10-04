@@ -1,13 +1,13 @@
 ---
 title: SAS
-date: 2023-10-26
-external_link: https://github.com/scikit-learn/scikit-learn
-tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+# date: 2023-10-26
+external_link: https://www.sas.com/en_us/home.html
+# tags:
+#   - Hugo
+#   - Wowchemy
+#   - Markdown
 ---
 
-scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+SAS는 대규모 데이터 분석 및 보고를 위해 기업 환경에서 널리 사용됩니다.
 
 <!--more-->
