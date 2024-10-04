@@ -70,8 +70,8 @@ sections:
     
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_height: '350px'
-      slide_width: '100px'
+      slide_height: '250px'
+      # slide_width: '100px'
       is_fullscreen: false
       # Automatically transition through slides?
       loop: true
