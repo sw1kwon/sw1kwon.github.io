@@ -1,9 +1,9 @@
 ---
 title: Publications
-cms_exclude: true
+# cms_exclude: true
 
-# View.
-view: citation
+# Listing view
+view: community/custom_compact
 
 # Optional header image (relative to `static/media/` folder).
 banner:
