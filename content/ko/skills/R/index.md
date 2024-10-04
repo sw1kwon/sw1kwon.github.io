@@ -1,6 +1,6 @@
 ---
 title: R
-# date: 2023-10-26
+date: 2022-09-01
 external_link: https://www.r-project.org/
 # tags:
 #   - Hugo
