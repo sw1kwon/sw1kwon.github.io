@@ -31,52 +31,52 @@ sections:
           position: center
           parallax: false
   
-  - block: slider
-    content:
-      slides:
+  # - block: slider
+  #   content:
+  #     slides:
 
-      - title: <span style="font-size:70%">Data</span>
-        content: <span style="font-size:70%"> <span style="font-size:70%">
-        align: center
-        background:
-          image:
-            filename: data.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
+  #     - title: <span style="font-size:70%">Data</span>
+  #       content: <span style="font-size:70%"> <span style="font-size:70%">
+  #       align: center
+  #       background:
+  #         image:
+  #           filename: data.jpg
+  #           filters:
+  #             brightness: 0.4
+  #         position: center
+  #         color: '#000'
 
-      - title: <span style="font-size:70%">Sports</span>
-        content: <span style="font-size:70%"> <span style="font-size:70%">
-        align: center
-        background:
-          image:
-            filename: sports.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
+  #     - title: <span style="font-size:70%">Sports</span>
+  #       content: <span style="font-size:70%"> <span style="font-size:70%">
+  #       align: center
+  #       background:
+  #         image:
+  #           filename: sports.jpg
+  #           filters:
+  #             brightness: 0.4
+  #         position: center
+  #         color: '#000'
 
-      - title: <span style="font-size:70%">Media</span>
-        content: <span style="font-size:70%"> <span style="font-size:70%">
-        align: center
-        background:
-          image:
-            filename: media.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
+  #     - title: <span style="font-size:70%">Media</span>
+  #       content: <span style="font-size:70%"> <span style="font-size:70%">
+  #       align: center
+  #       background:
+  #         image:
+  #           filename: media.jpg
+  #           filters:
+  #             brightness: 0.4
+  #         position: center
+  #         color: '#000'
     
-    design:
-      # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_height: '250px'
-      # slide_width: '100px'
-      is_fullscreen: false
-      # Automatically transition through slides?
-      loop: true
-      # Duration of transition between slides (in ms)
-      interval: 3000
+  #   design:
+  #     # Slide height is automatic unless you force a specific height (e.g. '400px')
+  #     slide_height: '250px'
+  #     # slide_width: '100px'
+  #     is_fullscreen: false
+  #     # Automatically transition through slides?
+  #     loop: true
+  #     # Duration of transition between slides (in ms)
+  #     interval: 3000
 
   # - block: markdown
   #   content:
