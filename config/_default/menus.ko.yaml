@@ -17,11 +17,11 @@ main:
     weight: 300
   - parent: Projects
     name: Personal
-    url: publication/
+    url: /
     weight: 310
   - parent: Projects
     name: Team
-    url: publication/
+    url: /
     weight: 320
 
   - name: Activities
@@ -29,15 +29,15 @@ main:
     weight: 400
   - parent: Activities
     name: Academic Courses
-    url: teaching/
+    url: /
     weight: 410
   - parent: Activities
     name: Extracurricular
-    url: event/
+    url: /
     weight: 420
 
   - name: Contact
-    url: contact/
+    url: /
     weight: 500
 
 
