@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soonwon KWON's Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello! I'm Soonwon KWON.</h1>
+        <p>This is my HTML webpage. </p>
+
+        <img src="https://raw.githubusercontent.com/sw1kwon/Site/main/content/en/authors/admin/avatar.jpg" alt="My Profile Image" class="profile-img">
+
+        <h2>My Interests</h2>
+        <ul>
+        <li>Statistics </li>
+        <li>Data Analysis & Data Visualization</li>
+        <li>Sports Big Data</li>
+        <li>Artificial Intelligence</li>
+        </ul>
+
+         <h2>My Hobbies</h2>
+         <ol>
+         <li>Playing the Piano</li>
+         <li>Playing Soccer</li>
+         <li>Listen to the OST</li>
+         </ol>
+
+        <h2>My Profile</h2>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Soonwon KWON</td>
+            </tr>
+            <tr>
+                <td>Occupation</td>
+                <td>Fourth-year student</td>
+            </tr>
+            <tr>
+                <td>Tech Stack</td>
+                <td>Python, R, SQL, SAS</td>
+            </tr>
+        </table>
+
+        <h2>Leave a Message</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Watch My Favorite Video</h2>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/cmzZLmQb3xs?si=CZ4BONXH4qx4QWuw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <!-- Visit My Blog -->
+        <div class="blog-card" onclick="openBlog()">
+            <h2>Visit My Blog</h2>
+            <p>Explore my posts, projects, and data visualizations in detail!</p>
+        </div>
+
+    </div>
+
+    <script>
+        function openBlog() {
+            window.open("https://sw1kwon.github.io", "BlogWindow", "width=800,height=600,resizable=yes");
+        }
+    </script>
+
+</body>
+</html>
